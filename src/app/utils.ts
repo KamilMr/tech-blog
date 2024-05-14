@@ -10,7 +10,6 @@ export const getPostMetadata = (): PostMetadata[] => {
   const posts = markdownPosts.map((f: any) => {
     const fileContents = fs.readFileSync(folder + f, 'utf8');
     const matterResult = matter(fileContents);
-    console.log(matterResult.data);
 
     return {
       title: matterResult.data.title,
