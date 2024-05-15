@@ -27,7 +27,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="border-t border-slate-500 mt-12 py-6 text-center text-slate-400">
-        <h1> Develop by Kamil Mrówka</h1>
+        <h1> Developed by Kamil Mrówka</h1>
       </div>
     </footer>
   );
