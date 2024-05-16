@@ -1,7 +1,7 @@
 import fs from 'fs';
-import { PostMetadata } from '@/components/PostMetadata';
+import {PostMetadata} from '@/components/PostMetadata';
 import matter from 'gray-matter';
-import { format } from 'date-fns';
+import {format} from 'date-fns';
 
 export const getPostMetadata = (): PostMetadata[] => {
   const folder = 'src/posts/';
@@ -20,5 +20,9 @@ export const getPostMetadata = (): PostMetadata[] => {
     };
   });
 
-  return posts;
+  return posts.sort(
+    (a, b) =>
+      new Date(b.date.split('/').reverse().join('-')).getTime() -
+      new Date(a.date.split('/').reverse().join('-')).getTime(),
+  );
 };
