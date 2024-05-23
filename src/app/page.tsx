@@ -4,7 +4,6 @@ import PostPreview from '@/components/PostPreview';
 const Home = async () => {
   const posts = getPostMetadata();
 
-console.log(posts);
   const postPreview = posts.sort().map((post: any) => (
     <PostPreview key={post.slug} {...post} />
   ));
