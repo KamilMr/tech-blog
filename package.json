@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pull-md": "cp ~/Documents/secondbrain/2-Areas/TechBlog/* ./src/posts/"
   },
   "dependencies": {
     "date-fns": "^3.6.0",
