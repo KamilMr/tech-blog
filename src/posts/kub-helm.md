@@ -1,6 +1,6 @@
 ---
 title: Studying hard
-subtitle: Today a learned about helm
+subtitle: Today, I learned about Helm
 tags:
   - kubernetes
 date: 2024-06-21
