@@ -10,7 +10,8 @@ tags:
 Swagger allows the description of APIs so they are easily readable by machines. I am investigating whether it is easy to use in my apps that will be hosted on my home lab machine. For this purpose, I decided to use the package  [swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)
 
 Usage is quite simple
-```js
+
+```javascript
 import fse from 'fs-extra';
 import swaggerUi from 'swagger-ui-express';
 import YAML from 'yaml';
@@ -28,7 +29,8 @@ router.use('/api-docs', swaggerUi.serve, handleSwagger);
 ```
 
 And then here is `swagger.yaml` file example: 
-```yaml
+
+```
 openapi: 3.0.0
 info:
   title: Sample API
@@ -56,7 +58,8 @@ paths:
 ```
 
 Now, I also need a way to display an image, and to do so, I found that it needs to be done this way:
-```yaml
+
+```
 description: |-
 	![some title](/image.png)
 
