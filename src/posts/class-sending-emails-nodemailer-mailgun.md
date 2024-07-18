@@ -15,11 +15,13 @@ And here is what we accomplished during the class: [Class code](https://github.c
 There were some topics I did not cover in the last class. For example, [Handlebars.js](https://handlebarsjs.com/installation/#npm-or-yarn-recommended).
 
 How simple is this?
+
 ```js
 import Handlebars from "handlebars";
 const template = Handlebars.compile("Name: {{name}}");
 console.log(template({ name: "Nils" }));
 ```
+
 I use this to build up the email message. Templates are located inside the template folder. At the moment there are two templates: otc and welcome.
 
 Additionally, I did not speak about sending emails using an API key. I also wrote an example with the code. One catch here is that I had to install an additional package, [nodemailer-mailgun-transport](https://www.npmjs.com/package/nodemailer-mailgun-transport), which creates the transport for us.
