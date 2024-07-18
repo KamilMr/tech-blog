@@ -29,4 +29,8 @@ Additionally, I did not speak about sending emails using an API key. I also wrot
 # Links
 https://handlebarsjs.com/guide/#what-is-handlebars
 https://www.npmjs.com/package/nodemailer-mailgun-transport
+https://documentation.mailgun.com/docs/mailgun/quickstart-guide/quickstart/
+https://nodemailer.com/smtp/
+https://nodemailer.com/about/
 
+https://developer.mozilla.org/en-US/docs/Glossary/SMTP
