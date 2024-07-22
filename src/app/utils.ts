@@ -1,6 +1,7 @@
 import fs from 'fs';
-import {PostMetadata} from '@/components/PostMetadata';
+
 import matter from 'gray-matter';
+import {PostMetadata} from '@/components/PostMetadata';
 import {format} from 'date-fns';
 
 export const getPostMetadata = (): PostMetadata[] => {

@@ -1,8 +1,9 @@
+import Image from 'next/image';
 import Link from 'next/link';
+
 import { PostMetadata } from './PostMetadata';
 import flagEng from '../../public/flag-for-flag-united-kingdom-svgrepo-com.svg';
 import flagPl from '../../public/flag-for-poland-svgrepo-com.svg';
-import Image from 'next/image';
 
 const PostPreview = (props: PostMetadata) => {
   return (

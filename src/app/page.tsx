@@ -1,5 +1,6 @@
-import { getPostMetadata } from './utils';
 import PostPreview from '@/components/PostPreview';
+
+import { getPostMetadata } from './utils';
 
 const Home = async () => {
   const posts = getPostMetadata();
