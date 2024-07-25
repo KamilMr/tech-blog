@@ -2,12 +2,13 @@
 date: " 2024-07-18"
 language: English
 title: Teaching Email Automation Using Handlebars and Nodemailer
-subtitle: A Step-by-Step Guide for Students on Crafting and Sending Emails with Node.js
+subtitle: A summary for Students on crafting and sending emails with Node.js
 tags:
   - Nodejs
   - express
+  - beginner-guide
 ---
-Yesterday, I had the pleasure of teaching a class for my students about sending emails to users. The goal was to create an email—if possible, using Handlebars—then send it to a test email account. We clicked on the link and verified the email on the server side.
+Yesterday, I had the pleasure of teaching a class for my students about sending emails to users. The goal was to create an email—if possible, using Handlebars—then send it to a test email account. Then by clicking the link verify the email on the server side.
 
 Here is the link to what I intended to show: [Link to my Home Lab](https://github.com/KamilMr/lab/tree/master/nodejs/email). 
 And here is what we accomplished during the class: [Class code](https://github.com/KamilMr/lab/tree/master/nodejs/email-class).
