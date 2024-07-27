@@ -5,7 +5,7 @@ import { addToFeed, getPostMetadata } from './utils';
 const Home = async () => {
   const posts = getPostMetadata();
 
-  addToFeed(posts.slice(0, 4));
+  addToFeed(posts.slice(0, 10));
 
   const postPreview = posts.map((post: any) => (
     <PostPreview key={post.slug} {...post} />
