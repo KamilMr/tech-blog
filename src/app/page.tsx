@@ -5,7 +5,6 @@ import { addToFeed, getPostMetadata } from './utils';
 const Home = async () => {
   const posts = getPostMetadata();
 
-  console.log(posts)
   addToFeed(posts.slice(0, 4));
 
   const postPreview = posts.map((post: any) => (
