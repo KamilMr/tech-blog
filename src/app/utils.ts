@@ -39,9 +39,17 @@ const feed = new RSS({
 });
 
 /** Add each item from the array to the feed. */
-export const addToFeed = (arr: {title: string; slug: string}[]) => {
-  arr.forEach(({title, slug}) =>
-    feed.item({title, url: `https://kamilmrowka.com/posts/${slug}`}),
+export const addToFeed = (
+  arr: {title: string; slug: string; date: string; subtitle: string}[],
+) => {
+  arr.forEach(({title, slug, date, subtitle}) =>
+    feed.item({
+      title,
+      guid: slug,
+      url: `https://kamilmrowka.com/posts/${slug}`,
+      description: title || subtitle,
+      date,
+    }),
   );
   fs.writeFileSync('./public/rss.xml', feed.xml());
 };
