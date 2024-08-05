@@ -48,3 +48,5 @@ This solution ensured that the environment variables were correctly loaded regar
 # Links
 https://knexjs.org/guide/migrations.html#transactions-in-migrations
 https://github.com/motdotla/dotenv#path
+
+https://github.com/KamilMr/task-tracker/blob/main/README.md
