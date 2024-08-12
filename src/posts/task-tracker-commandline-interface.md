@@ -6,7 +6,7 @@ tags:
   - Nodejs
   - project
   - task-tracker
-subtitle: Working on task-tracker project
+subtitle:
 ---
 Today, I chose two command-line interfaces to use in my task tracker app. The first one is the **Inquirer** library. The main reason I chose **Inquirer** is that it has several features that are very useful for my application. 
 
