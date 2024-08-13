@@ -2,7 +2,7 @@
 date: " 2024-08-12"
 language: English
 title: Here’s to more learning, more challenges, and new beginnings
-subtitle: Seven months of learning, teaching — insights from my role as a mentor helping aspiring full-stack developers.
+subtitle: My role as a mentor helping aspiring full-stack developers.
 ---
 As my recent mentoring role came to a close today, I find myself reflecting on the journey. For the past seven months, I’ve been on a journey as a Node.js and React mentor, helping students overcome obstacles on their path to becoming full-stack developers. It was amazing and rewarding experience!
 
