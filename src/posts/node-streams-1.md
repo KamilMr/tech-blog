@@ -33,5 +33,5 @@ Another analogy is to think of streams as pipelines through which water flows. T
 
 All of these are instances of the `EventEmitter` class, meaning they produce events. They can handle both binary data and any JavaScript value when in object mode.
 ### Links
-- [Node.js](#)
-- [Streams](#)
+[[Nodejs]]
+[[Streams]]
