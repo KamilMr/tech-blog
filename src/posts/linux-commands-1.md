@@ -1,5 +1,5 @@
 ---
-date: " 2024-08-08"
+date: " 2024-10-18"
 language: English
 title: Linux command journey 1
 subtitle: What command I have learned?
