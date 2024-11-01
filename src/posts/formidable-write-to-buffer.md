@@ -54,7 +54,7 @@ First, create new writable with some methods that will be needed. Let's the Writ
 
 Write method will receive chunks of a  file and add them to an array. Callback is used when chunk is flushed into resource. Next method, `destroy` , reset the file on destroy. And `final` triggers once the stream closes, concatenating chunks into a single `Buffer`.   
 
-Above code lets put combine with `fileWriteStreamHandler`
+Now lets take above code and combine with `fileWriteStreamHandler`
 
 ```js
 const files = {};
