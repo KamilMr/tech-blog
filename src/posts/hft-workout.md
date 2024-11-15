@@ -3,6 +3,7 @@ title: What I accomplished last week in Home Finance Tracker?
 language: English
 tags:
   - home-finance-tracker
+date: " 2024-11-15"
 ---
 Below is a list of what I accomplished last week with my Home Finance Tracker project. These are not commit messages but notes I write down after each day of work. Later, when I read them, they give me a sense of working toward my goal.
 
