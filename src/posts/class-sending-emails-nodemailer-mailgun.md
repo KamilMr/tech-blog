@@ -1,5 +1,5 @@
 ---
-date: " 2024-07-18"
+date: 2024-07-18
 language: English
 title: Teaching Email Automation Using Handlebars and Nodemailer
 subtitle: A summary for Students on crafting and sending emails with Node.js
