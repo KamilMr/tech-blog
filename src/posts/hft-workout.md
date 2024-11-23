@@ -1,6 +1,7 @@
 ---
 title: What I accomplished last week in Home Finance Tracker?
-date: 2024-11-15
+subtitle: 
+date: " 2024-11-15"
 language: English
 tags:
   - home-finance-tracker
