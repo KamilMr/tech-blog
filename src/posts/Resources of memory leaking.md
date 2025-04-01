@@ -4,6 +4,7 @@ subtitle: Resources of memory leaking - but not only
 date: " 2025-02-10"
 tags:
   - links
+language: English
 ---
 
 Here are some links about memory and memory I am currently reading. 

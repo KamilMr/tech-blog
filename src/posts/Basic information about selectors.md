@@ -3,6 +3,7 @@ title: Selectors in React Redux
 tags:
   - React
 date: " 2025-03-28"
+language: English
 ---
 
 Yesterday, I was going through one of our repositories, trying to understand how selectors are placed in our components. Should I move them down into the components, or leave them in the parent component? To figure that out, I skimmed through the documentation and took some basic notes—mostly as a reminder and so I can add this to my digital garden—on what I should know about them.
