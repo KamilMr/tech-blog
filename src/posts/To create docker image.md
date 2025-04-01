@@ -8,9 +8,9 @@ tags:
 
 The next session of learning Docker. Today I was working on a few basics.
 
-First, you have to install dependencies, then the app.
+First,  install dependencies, then the app.
 
-He first uses the ubuntu image and runs it with the bash command so it doesn’t stop immediately:
+Use the ubuntu image and run it with the bash command so it doesn’t stop immediately:
 
 ```bash
 docker run -it ubuntu bash
