@@ -6,6 +6,7 @@ language: English
 tags:
   - docker
 ---
+
 I just finished the course **Docker for the Absolute Beginners**, and I really enjoyed it. The Mumshad combines clear lectures with hands-on labs, integrated through kodekloud.com, which gave me the ability to start using Docker in my homelab.
 
 I particularly enjoyed the sections on networking and managing persistent storage. I’m even thinking about dockerizing everything now :-)

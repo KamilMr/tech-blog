@@ -1,11 +1,11 @@
 ---
 title: Express 5 Error Handling Has Changed
-subtitle:
 date: 15/04/2025
 language: English
 tags:
   - express
 ---
+
 ```
 app.get('/user/:id', async (req, res, next) => {
   const user = await getUserById(req.params.id);
