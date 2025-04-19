@@ -5,7 +5,6 @@ language: English
 tags:
   - express
 ---
-
 ```
 app.get('/user/:id', async (req, res, next) => {
   const user = await getUserById(req.params.id);
