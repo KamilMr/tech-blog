@@ -100,4 +100,3 @@ atuin key # run this after registering
 atuin sync
 ```
 
-How cool is that? 
