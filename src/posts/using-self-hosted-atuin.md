@@ -1,7 +1,7 @@
 ---
 title: Dockerized atuin
 subtitle: Learning docker
-date: 25/04/2025
+date: 2025-04-24
 language: English
 tags:
   - docker
