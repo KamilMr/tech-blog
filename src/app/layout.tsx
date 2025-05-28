@@ -16,10 +16,19 @@ const Header = () => {
   return (
     <header>
       <div className="text-center bg-slate-800 p-8 my-6 rounded-md">
-        <Link href="/">
-          <h1 className="text-2xl font-bold text-white mt-4">Kamil Mrówka</h1>
-        </Link>
-        {/*<p className="text-slate-300">Witam na moim blogu</p>{' '}*/}
+        <div className="flex justify-between items-center space-x-6">
+          <Link href="/" className="text-white hover:text-slate-300">
+            <h1 className="text-2xl font-bold">Kamil Mrówka</h1>
+          </Link>
+          <nav className="flex items-center space-x-4">
+            <Link href="/" className="text-white hover:text-slate-300">
+              Home
+            </Link>
+            <Link href="/about" className="text-white hover:text-slate-300">
+              About
+            </Link>
+          </nav>
+        </div>
       </div>
     </header>
   );
