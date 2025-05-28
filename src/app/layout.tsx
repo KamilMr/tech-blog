@@ -14,17 +14,17 @@ export const metadata: Metadata = {
 
 const Header = () => {
   return (
-    <header>
-      <div className="text-center bg-slate-800 p-8 my-6 rounded-md">
-        <div className="flex justify-between items-center space-x-6">
-          <Link href="/" className="text-white hover:text-slate-300">
-            <h1 className="text-2xl font-bold">Kamil Mrówka</h1>
+    <header className="w-full bg-transparent border-slate-200">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="flex justify-between items-center py-8">
+          <Link href="/" className="text-black hover:text-slate-600">
+            <h1 className="text-3xl font-bold">Kamil Mrówka</h1>
           </Link>
-          <nav className="flex items-center space-x-4">
-            <Link href="/" className="text-white hover:text-slate-300">
+          <nav className="flex items-center space-x-8">
+            <Link href="/" className="text-black hover:text-slate-600 text-lg">
               Home
             </Link>
-            <Link href="/about" className="text-white hover:text-slate-300">
+            <Link href="/about" className="text-black hover:text-slate-600 text-lg">
               About
             </Link>
           </nav>
@@ -50,16 +50,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <head>
         <link rel="icon" href="/favicons/favicon.ico" sizes="any" />
       </head>
-      <body className={inter.className}>
-        <div className="mx-auto max-w-2xl px-6">
-          <Header />
-          {children}
-          <Footer />
-        </div>
+      <body className={`${inter.className} h-full flex flex-col`}>
+        <Header />
+        <main className="flex-1 h-[calc(100vh-80px)] overflow-y-auto">
+          <div className="mx-auto max-w-2xl px-6 py-8">
+            {children}
+            <Footer />
+          </div>
+        </main>
       </body>
     </html>
   );
