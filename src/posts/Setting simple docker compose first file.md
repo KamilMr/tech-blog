@@ -2,7 +2,7 @@
 date: 2025-03-26
 language: English
 title: Learning Docker 
-tags: Note
+tags: 
 --- 
 
  I’m working on a simple module that uploads files from one directory to an S3 bucket. I’m trying to implement the sidecar pattern.
