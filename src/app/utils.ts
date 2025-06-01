@@ -19,6 +19,7 @@ export const getPostMetadata = (): PostMetadata[] => {
       subtitle: matterResult.data.subtitle,
       slug: f.replace('.md', ''),
       language: matterResult.data.language,
+      tags: matterResult.data.tags || [],
     };
   });
 
