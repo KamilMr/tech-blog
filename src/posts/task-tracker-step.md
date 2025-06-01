@@ -1,11 +1,12 @@
 ---
-date: " 2024-08-25"
+date: 2024-08-25
 language: English
 title: Building a task tracker
 subtitle: Considering my next steps
 tags:
   - task-tracker
 ---
+
 I’ve been working on the project and testing how the application functions. All major tasks are now complete; I can add clients, projects, and tasks with basic CRUD operations.
 
 My initial step in creating the task tracker was to quickly develop basic functionality to create clients, projects, and tasks. Now that I've achieved this, my next goal is to implement logic that allows me to start and stop a timer when I begin and finish a task. I also want the ability to resume from where I left by turning off tmux. This functionality is crucial, especially when I decide to quickly kill tmux. The task tracker should be able to pick up where I left off and prompt me to decide what to do next.

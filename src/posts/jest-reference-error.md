@@ -6,6 +6,7 @@ language: English
 tags:
   - React
 ---
+
 In one project, I am using a worker to perform some heavy tasks. When trying to commit changes, `jest` gives a `ReferenceError`. I had to use the code below to create a reference for `Worker` to run on `jest`.
 
 ```js

@@ -1,5 +1,5 @@
 ---
-date: " 2025-03-26"
+date: 2025-03-26
 language: English
 title: Learning Docker 
 tags: Note

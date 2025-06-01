@@ -6,4 +6,5 @@ language: English
 tags:
   - homelab
 ---
+
 I'm just pondering on my homelab and not sure which device I should use to run my cluster. One option is a Raspberry Pi 2, and the other is an old Dell laptop.

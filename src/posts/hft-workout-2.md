@@ -1,11 +1,12 @@
 ---
-date: " 2024-11-23"
+date: 2024-11-23
 title: What I accomplished last week in Home Finance Tracker?
 subtitle: Just notes on what I was able to accomplish last week, 2
 language: English
 tags:
   - home-finance-tracker
 ---
+
 **Short reflection**
 
 It seems to me that I am on the right track to meet my goals. However, I might not finish everything by the end of the upcoming week. My main goal was to rewrite the app to support multiple users, which required creating additional modules, such as a signup flow. I also wanted to enable expense sharing with my family, which led to the need for a housing concept to support this functionality. Redesigning the database and creating new views took longer than I anticipated.

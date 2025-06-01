@@ -1,6 +1,6 @@
 ---
 title: Finished course docker for beginners
-subtitle: '"...particularly enjoyed the sections on networking..."'
+subtitle: ...particularly enjoyed the sections on networking...
 date: 2025-04-05
 language: English
 tags:

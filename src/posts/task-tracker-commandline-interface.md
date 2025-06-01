@@ -1,5 +1,5 @@
 ---
-date: " 2024-08-07"
+date: 2024-08-07
 language: English
 title: Choosing command line interface
 tags:
@@ -8,6 +8,7 @@ tags:
   - task-tracker
 subtitle:
 ---
+
 Today, I chose two command-line interfaces to use in my task tracker app. The first one is the **Inquirer** library. The main reason I chose **Inquirer** is that it has several features that are very useful for my application. 
 
 First, it can ask questions, which is essential for creating an interactive app that will recursively ask what actions I want to perform. After completing an action, the app will return to the beginning to prompt for the next action. This feature ensures a smooth and user-friendly workflow.

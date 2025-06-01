@@ -4,6 +4,7 @@ subtitle: Today is the day it came to life
 date: 2024-05-15
 language: English
 ---
+
 I just started my tech blog. Today is the day it came to life.  
 
 It is a small project at the moment and a simple one because when something is born it is also small and simple. Its purpose is to be a process not a ready made product. I am doing this to log my tech journey, share with others what I have just learned during the day or probably the past few days. Hopefully some will find it useful in some way. 

@@ -7,6 +7,7 @@ tags:
   - kubernetes
   - DevOps
 ---
+
 In the last few days, in my free time after my daily work, I take a short break and start learning Kubernetes. For that, I study a course available on Udemy: [Kubernetes Masterclass for Beginners by Mischa van den Burg](https://www.udemy.com/course/kubernetes-masterclass-for-beginners/?couponCode=ST21MT61124). The goal is to start my home lab where I will be able to run my cluster.
 
 **Stages:**

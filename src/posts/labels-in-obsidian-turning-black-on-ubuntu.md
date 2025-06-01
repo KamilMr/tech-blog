@@ -1,10 +1,11 @@
 ---
-date: " 2025-01-05"
+date: 2025-01-05
 language: English
 title: Labels in Obsidian Turning Black on Ubuntu 22
 tags:
   - Obsidian
 ---
+
 On Ubuntu 22 (not sure about other systems), every few months I need to run the script below to fix an issue with labels turning black in Obsidian's graph view. The problem likely arises due to a cache issue.
 
 ```bash

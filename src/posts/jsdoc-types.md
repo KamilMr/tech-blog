@@ -1,10 +1,11 @@
 ---
-date: " 2024-11-09"
+date: 2024-11-09
 language: English
 title: JsDoc types in Node.js without TypeScript
 tags:
   - JsDoc
 ---
+
 Interesting! Although I was not ready to use  use TypeScript in my Nodejs app yet, I began exploring how JsDoc could provide similar benefits. Basically I defined types in one file and imported them in my root project file in `index.js`. The wile with types, has types definitions like this:
 
 ```js

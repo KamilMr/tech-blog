@@ -7,6 +7,7 @@ tags:
   - Nodejs
   - docker
 ---
+
 Today I have been pondering what means "_mastering the fundamentals of problem solving_". I come up with few steps:
 
 1. Practice small problems daily – e.g. use [LeetCode](https://leetcode.com), [Codewars](https://www.codewars.com), or [Edabit](https://edabit.com).

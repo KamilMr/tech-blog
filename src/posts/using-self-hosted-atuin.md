@@ -7,6 +7,7 @@ tags:
   - docker
   - self-hosted
 ---
+
 This morning, I found a new self-hosted application that lets me persist the history of commands from my terminal. I like using Compose for my images, so I used it today as well.
 
 The examples below are based on the official documentation. First, I created a .env file with content similar to this (I only changed the password to a common one I use locally):

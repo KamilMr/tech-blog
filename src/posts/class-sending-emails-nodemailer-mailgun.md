@@ -8,6 +8,7 @@ tags:
   - express
   - beginner-guide
 ---
+
 Yesterday, I had the pleasure of teaching a class for my students about sending emails to users. The goal was to create an email—if possible, using Handlebars—then send it to a test email account. Then by clicking the link verify the email on the server side.
 
 Here is the link to what I intended to show: [Link to my Home Lab](https://github.com/KamilMr/lab/tree/master/nodejs/email). 

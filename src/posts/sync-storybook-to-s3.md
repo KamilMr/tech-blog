@@ -6,6 +6,7 @@ language: English
 tags:
   - Nodejs
 ---
+
 And so first step to automate repetitive tasks of Storybook deployment with help of `aws cli`. 
 Node.js script that automates build and syncing, making Storybook deployment very simple.  
 

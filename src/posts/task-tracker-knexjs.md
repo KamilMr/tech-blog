@@ -1,11 +1,12 @@
 ---
-date: " 2024-08-05"
+date: 2024-08-05
 language: English
 title: Adding knex.js to my project
 tags:
   - task-tracker
   - project
 ---
+
 Today, I took some time early in the morning to push one of my projects a little further. The project is a small task-tracker, and I started by creating a basic schema for the database. Now, I am considering how to manage interactions with the database. Previously, I used **Knex.js** in my work, and for this project, I debated between using **mysql2** with raw SQL or building a query builder helper. However, I ultimately decided to use **Knex.js**.
 
 **Knex.js** offers several advantages. First, it simplifies database migrations and schema building, allowing for easy setup and updates. Second, it enables the construction of SQL queries without needing to write raw SQL, which can help avoid potential errors. Third, using **Knex.js** provides me with an opportunity to practice with this library, improve my skills, and potentially use it in other projects.

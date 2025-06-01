@@ -1,7 +1,7 @@
 ---
 title: Memory
 subtitle: Resources of memory leaking - but not only
-date: " 2025-02-10"
+date: 2025-02-10
 tags:
   - links
 language: English

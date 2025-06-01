@@ -1,5 +1,5 @@
 ---
-date: " 2024-08-24"
+date: 2024-08-24
 language: English
 tags:
   - Nodejs
@@ -7,6 +7,7 @@ tags:
 title: Basic notes about streams
 subtitle: Streams 1
 ---
+
 ### What Are Streams?
 
 Streams allow you to work with data in chunks as soon as it becomes available. This means you don't have to wait for all pieces of data to arrive before starting to process them.

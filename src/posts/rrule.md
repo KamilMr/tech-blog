@@ -6,6 +6,7 @@ tags:
   - npm
 language: English
 ---
+
 I am building a small booking system that will allow people to book meetings with a therapist, but it can also be used in other fields. To make it work, I decided to build a simple calendar system where events can be created and stored in the database. However, I didn't want to clutter the database with many events, just one. Based on this event, I wanted to populate the rest on the fly. At first, I was almost building this function myself, but then I came across a package called `rrule`. I will have to think a bit more about how to take advantage of [rrule - see docs](https://www.npmjs.com/package/rrule). Here is a piece of code from the documentation.
 
 I am currently using the method `all()` that gets all occurrences from `dtstart` up to `until`.

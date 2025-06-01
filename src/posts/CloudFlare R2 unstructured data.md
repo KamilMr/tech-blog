@@ -1,10 +1,11 @@
 ---
 title: Cloudflare R2
 language: English
-date: " 2025-04-19"
+date: 2025-04-19
 tags:
   - AWS
 ---
+
 Today, in one of my projects, I needed to store files—mostly images for now—that would later be accessed by other services. While researching this topic, I came across [Cloudflare R2](https://developers.cloudflare.com/r2/), a storage solution designed for handling large amounts of unstructured data.
 
 The pricing is reasonable, and they offer 10GB of storage for free, which is more than enough for my current needs. I went ahead and created a bucket. By default, buckets aren’t publicly accessible. To make them public, you either need to configure a custom domain or use an r2.dev subdomain. The latter has a few limitations, but it works fine for development purposes.

@@ -1,10 +1,12 @@
 ---
-date: " 2024-10-18"
+date: 2024-10-18
 language: English
 title: Linux command journey 1
 subtitle: What command I have learned?
 tags:
+    - Linux
 ---
+
 # Some cool Linux command I have learned this week:
 
 Do you want some command run continuously for example every 1 sec? 

@@ -1,9 +1,10 @@
 ---
-date: " 2024-08-12"
+date: 2024-08-12
 language: English
 title: Here’s to more learning, more challenges, and new beginnings
 subtitle: My role as a mentor helping aspiring full-stack developers.
 ---
+
 As my recent mentoring role came to a close today, I find myself reflecting on the journey. For the past seven months, I’ve been on a journey as a Node.js and React mentor, helping students overcome obstacles on their path to becoming full-stack developers. It was amazing and rewarding experience!
 
 At the beginning, I faced a lot of stress, but over time, I grew more comfortable and discovered the joy of teaching others. Many times I was reminded of how much there is to learn. Often, I believed I had the right answers, only to find myself revisiting the basics, rethinking my approach, and articulating my solutions more effectively.

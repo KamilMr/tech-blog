@@ -6,6 +6,7 @@ language: English
 tags:
   - Mysql
 ---
+
 I read about security guidelines in the MySQL documentation, and it got me interested in the topic. I learned that I need to check the firewall on my server and I could use for the following command to check whether I can connect to my MySQL instance from an external server:
 
 ```bash

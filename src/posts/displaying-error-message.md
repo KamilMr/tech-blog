@@ -4,9 +4,8 @@ subtitle: Print the error to the terminal in the catch block
 date: 2024-05-18
 language: English
 tags:
-  - "#beginner-guide"
+  - beginner-guide
   - express
----
 ---
 
 While reviewing my students code base, I've noticed that some people struggle with understanding why something isn't working. For example, they receive a message in Postman that simply states, "An error occurred," without any further information. The terminal doesn't display any error either. So, what just happened?
