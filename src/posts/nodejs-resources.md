@@ -4,7 +4,7 @@ language: English
 title: Where to get information about Nodejs
 tags:
   - Nodejs
-subtitle: Last update, 2024-08-24
+subtitle: Last update, 2025-06-13
 ---
 
 # Where to Find Reliable Resources About Node.js
@@ -26,8 +26,8 @@ Here are some websites that will help you continue your journey with Node.js:
 ### blogs
 - Dominic Tarr:  https://dominictarr.com/ 
 - Luciano Mammino: https://loige.co/ 
+- Dr. Axel Rauschmayer : https://2ality.com/index.html
 
 This resource will be updated whenever I come across something meaningful.
-
 
 [[Nodejs]]

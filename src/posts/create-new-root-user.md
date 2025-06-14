@@ -7,7 +7,6 @@ tags:
   - Mysql
 ---
 
-
 Some time ago, I removed the root user and was unable to perform certain actions on the database. I needed to recreate the root account. To do this, I first stopped the MySQL service:
 
 ```bash
