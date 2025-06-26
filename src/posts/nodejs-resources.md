@@ -23,12 +23,12 @@ Here are some websites that will help you continue your journey with Node.js:
 4. **[W3Schools](https://www.w3schools.com/nodejs/nodejs_get_started.asp)**  
    This is probably the simplest resource on the list. While I didn't find it very helpful for deep understanding, it provides an overview of some topics and includes basic code snippets. I included it here because this website is quite well-known.
 
-### blogs
+### Blogs
 - Dominic Tarr:  https://dominictarr.com/ 
 - Luciano Mammino: https://loige.co/ 
 - Dr. Axel Rauschmayer : https://2ality.com/index.html
 
-Course
+### Courses
 - [Udemy Course by Hussein Nasser](https://www.udemy.com/course/nodejs-internals-and-architecture/?couponCode=ST16MT230625A)
 
 This resource will be updated whenever I come across something meaningful.
