@@ -42,5 +42,12 @@ I can pipie above output to another command that will display only needed number
 ```bash
 du -sh * | sort -h | head -n 2 # only 2 items will be shown
 ```
+
+
+Some new cool command:
+```bash
+read var; echo "I said $var"
+```
+This command will wait for your input, will read from file descriptor. Once you write something it will assigned it to var (anything actually) and print it later on. 
 # Links
 [[Linux]]
