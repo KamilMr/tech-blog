@@ -31,3 +31,5 @@ fi
 
 git push
 ```
+
+[[automating-blog-post-publishing-from-obsidian]]
