@@ -26,7 +26,7 @@ Expo SecureStore, on the other hand, leverages the device's secure hardware encl
 
 First, I created small helper function around Expo SecureStore:
 
-```typescript
+```javascript
 import * as SecureStore from 'expo-secure-store';
 
 // Save credentials securely
@@ -53,7 +53,7 @@ This utility provides three essential operations: save, retrieve, and delete. Th
 
 I added a checkbox component that's both functional and accessible:
 
-```tsx
+```javascript
 import {Button, TextInput, Checkbox} from 'react-native-paper';
 import {save, getValueFor, deleteValue} from '@/utils/secureStorage';
 
@@ -75,7 +75,7 @@ const [rememberUser, setRememberUser] = useState(false);
 
 The checkbox handler is where it's not just about toggling a boolean—it's about managing sensitive data also:
 
-```tsx
+```js
 const handleCheckbox = async () => {
   const newRememberValue = !rememberUser;
   setRememberUser(newRememberValue);
@@ -97,7 +97,7 @@ The key insight here is **immediate deletion**. When users uncheck "remember me,
 
 The component needs to check for saved credentials when it first loads:
 
-```tsx
+```javascript
 useEffect(() => {
   const loadSavedCredentials = async () => {
     try {
@@ -123,7 +123,7 @@ useEffect(() => {
 
 Finally, the login handler saves credentials only after successful authentication:
 
-```tsx
+```javascript
 const handleSave = async () => {
   try {
     await dispatch(signIn(data)).unwrap();
