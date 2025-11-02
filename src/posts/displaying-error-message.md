@@ -7,7 +7,7 @@ tags:
   - beginner-guide
   - express
 ---
-
+    
 While reviewing my students code base, I've noticed that some people struggle with understanding why something isn't working. For example, they receive a message in Postman that simply states, "An error occurred," without any further information. The terminal doesn't display any error either. So, what just happened?
 
 Today's example is when using a `try-catch` block in JavaScript. A common issue is not logging enough information about the error, which can make debugging difficult.
