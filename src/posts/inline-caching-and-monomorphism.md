@@ -10,7 +10,7 @@ tags:
 
 Today I learned about inline caching, one of the key optimization techniques that makes JavaScript fast. 
 
-![pasted-image-20251102182935](/images/pasted-image-20251102182935.png)
+[[Pasted image 20251102182935.png]]
 
 What is it? 
 Inline caching is an optimization technique where the V8 engine remembers property access patterns at specific locations in your code - called **call sites**.
