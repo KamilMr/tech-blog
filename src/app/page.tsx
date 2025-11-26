@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import PostCard from '@/components/PostCard';
+import AboutSection from '@/components/AboutSection';
 import { getPostMetadata } from './utils';
 
 const Home = async () => {
@@ -7,7 +8,9 @@ const Home = async () => {
   const recentPosts = posts.slice(0, 3);
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-24">
+      <AboutSection />
+
       <section>
         <h2 className="text-4xl font-serif italic mb-8">Writing</h2>
         <div>
