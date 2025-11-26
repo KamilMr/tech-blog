@@ -14,7 +14,7 @@ export default async function AboutPage() {
   const content = await getAboutContent();
 
   return (
-    <div className="prose max-w-none">
+    <div className="prose dark:prose-invert max-w-none">
       <div className="flex flex-col items-center mb-8">
         <Image
           src="/me.jpg"

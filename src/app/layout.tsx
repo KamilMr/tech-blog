@@ -1,12 +1,17 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-import { Inter } from 'next/font/google';
+import { Inter, Lora } from 'next/font/google';
 import ThemeToggle from '@/components/ThemeToggle';
 
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
+const lora = Lora({
+  subsets: ['latin'],
+  style: ['normal', 'italic'],
+  variable: '--font-lora'
+});
 
 export const metadata: Metadata = {
   title: 'Kamil Mrówka',
@@ -24,9 +29,6 @@ const Header = () => {
             </Link>
             <Link href="/posts" className="text-black dark:text-white hover:text-slate-600 dark:hover:text-slate-300 text-lg">
               Writing
-            </Link>
-            <Link href="/about" className="text-black dark:text-white hover:text-slate-600 dark:hover:text-slate-300 text-lg">
-              About
             </Link>
           </nav>
           <ThemeToggle />
@@ -66,7 +68,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.className} h-full flex flex-col bg-white dark:bg-[#171717] text-black dark:text-white`}>
+      <body className={`${inter.className} ${lora.variable} h-full flex flex-col bg-white dark:bg-[#171717] text-black dark:text-white`}>
         <Header />
         <main className="flex-1 h-[calc(100vh-80px)] overflow-y-auto">
           <div className="mx-auto max-w-2xl px-6 py-8">
