@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import PostCard from '@/components/PostCard';
 import AboutSection from '@/components/AboutSection';
 import { getPostMetadata } from './utils';
+import CTAction from '@/components/CTAction';
 
 const Home = async () => {
   const posts = getPostMetadata();
@@ -18,12 +18,7 @@ const Home = async () => {
             <PostCard key={post.slug} {...post} />
           ))}
         </div>
-        <Link
-          href="/posts"
-          className="inline-block mt-12 px-6 py-3 border border-slate-300 dark:border-slate-700 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-        >
-          View All Posts
-        </Link>
+        <CTAction href="/posts" text="View All Posts" />
       </section>
     </div>
   );

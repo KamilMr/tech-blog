@@ -18,18 +18,28 @@ export const metadata: Metadata = {
   description: 'Tech Blog',
 };
 
+const LinkComponent = ({ href, children }: { href: string, children: React.ReactNode }) => {
+  return (
+    <Link href={href} className="text-black dark:text-white hover:text-slate-600 dark:hover:text-slate-300 text-sm hover:underline">
+      {children}
+    </Link>
+  );
+};
+
 const Header = () => {
   return (
     <header className="w-full">
       <div className="max-w-2xl mx-auto px-6 py-8">
         <div className="flex justify-between items-center">
           <nav className="flex items-center space-x-8">
-            <Link href="/" className="text-black dark:text-white hover:text-slate-600 dark:hover:text-slate-300 text-lg">
-              Home
-            </Link>
-            <Link href="/posts" className="text-black dark:text-white hover:text-slate-600 dark:hover:text-slate-300 text-lg">
-              Writing
-            </Link>
+            {[
+              { href: '/', label: 'Home' },
+              { href: '/posts', label: 'Blog' },
+            ].map(({ href, label }) => (
+              <LinkComponent key={label} href={href}>
+                {label}
+              </LinkComponent>
+            ))}
           </nav>
           <ThemeToggle />
         </div>

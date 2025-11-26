@@ -1,7 +1,7 @@
 ---
-title: About Me
+title: Hi There & Welcome to My Corner of the Web!
 ---
 
-Welcome to my website! I'm Kamil, a React and Node.js developer and mentor.
-This blog serves as a place where I share my learning journey, technical thoughts, and notes
-about Node.js, React, Backend Development, and my new interest, DevOps.
+I'm Kamil Mrówka, a full stack developer and mentor, dedicated to crafting exceptional digital experiences with React and Node.js. My approach involves embracing intuition, conducting thorough research, and leveraging modern technologies to build outstanding products. I have appreciation for clean code, elegant design, and the principles of continuous learning and growth in software development.
+
+Feel free to explore my coding endeavors on [GitHub](https://github.com/kamilmr) or connect with me on [Twitter/X](https://x.com/kamil_mrowka).
