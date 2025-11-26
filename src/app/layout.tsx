@@ -15,12 +15,9 @@ export const metadata: Metadata = {
 
 const Header = () => {
   return (
-    <header className="w-full bg-transparent border-slate-200 dark:border-slate-700">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="flex justify-between items-center py-8">
-          <Link href="/" className="text-black dark:text-white hover:text-slate-600 dark:hover:text-slate-300">
-            <h1 className="text-3xl font-bold">Kamil Mrówka</h1>
-          </Link>
+    <header className="w-full">
+      <div className="max-w-2xl mx-auto px-6 py-8">
+        <div className="flex justify-between items-center">
           <nav className="flex items-center space-x-8">
             <Link href="/" className="text-black dark:text-white hover:text-slate-600 dark:hover:text-slate-300 text-lg">
               Home
@@ -28,8 +25,8 @@ const Header = () => {
             <Link href="/about" className="text-black dark:text-white hover:text-slate-600 dark:hover:text-slate-300 text-lg">
               About
             </Link>
-            <ThemeToggle />
           </nav>
+          <ThemeToggle />
         </div>
       </div>
     </header>
