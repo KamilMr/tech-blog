@@ -1,0 +1,40 @@
+
+> techblog@0.1.0 build
+> node scripts/generate-rss.js && next build
+
+RSS feed generated successfully!
+  ▲ Next.js 14.2.3
+
+   Creating an optimized production build ...
+(node:1094) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/63) ...
+   Generating static pages (15/63) 
+   Generating static pages (31/63) 
+   Generating static pages (47/63) 
+ ✓ Generating static pages (63/63)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                         Size     First Load JS
+┌ ○ /                                               5.29 kB        99.1 kB
+├ ○ /_not-found                                     871 B          87.9 kB
+├ ƒ /posts                                          746 B          94.5 kB
+└ ● /posts/[slug]                                   137 B          87.1 kB
+    ├ /posts/inline-caching-and-monomorphism
+    ├ /posts/understanding-v8-compilation-pipeline
+    ├ /posts/firebase-app-distribution-eas-build
+    └ [+55 more paths]
++ First Load JS shared by all                       87 kB
+  ├ chunks/23-6de92bf77c16c86b.js                   31.5 kB
+  ├ chunks/fd9d1056-62aaf4b921c84028.js             53.6 kB
+  └ other shared chunks (total)                     1.89 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses getStaticProps)
+ƒ  (Dynamic)  server-rendered on demand
+
