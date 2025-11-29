@@ -1,6 +1,6 @@
 import PostCard from '@/components/PostCard';
 import Pagination from '@/components/Pagination';
-import { addToFeed, getPostMetadata } from '../utils';
+import { getPostMetadata } from '../utils';
 
 const POSTS_PER_PAGE = 6;
 
@@ -12,8 +12,6 @@ const PostsPage = async ({ searchParams }: { searchParams: { page?: string } }) 
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
   const endIndex = startIndex + POSTS_PER_PAGE;
   const currentPosts = posts.slice(startIndex, endIndex);
-
-  addToFeed(posts.slice(0, 20));
 
   return (
     <div>
