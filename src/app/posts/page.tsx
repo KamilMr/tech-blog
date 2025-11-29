@@ -2,6 +2,8 @@ import PostCard from '@/components/PostCard';
 import Pagination from '@/components/Pagination';
 import { getPostMetadata } from '../utils';
 
+export const runtime = 'nodejs';
+
 const POSTS_PER_PAGE = 6;
 
 const PostsPage = async ({ searchParams }: { searchParams: { page?: string } }) => {
