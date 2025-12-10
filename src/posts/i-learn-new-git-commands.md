@@ -1,11 +1,26 @@
 ---
 title: I am learning new git commands
-subtitle: 
-date: 2025-06-26
+subtitle:
+date: 2025-12-10
 language: English
 tags:
   - git
 ---
+## git log -S (Pickaxe search)
+Find commits where this string was added or removed:
+`git log -S "fetchW3w" --oneline`
+## git log -G (Regex search)
+More flexible pattern matching:
+`git log -G "fetchW3w" --oneline -p`
+The -p flag shows the actual diff.
+
+## git blame
+See line-by-line history of a specific file:
+`git blame src/path/to/file.jsx`
+
+## git log for specific file
+Track all changes to a file:
+`git log --oneline -p -- src/path/to/file.jsx`
 ##  git status --porcelain
 This command offers a concise, machine-readable representation of the Git repository’s status, which is suitable for scripting. I had to learn this because I needed to develop logic that required me to know the number of files currently being edited. If the output is empty, it indicated that no files had been edited.
 
