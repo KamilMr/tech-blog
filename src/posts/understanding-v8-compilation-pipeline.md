@@ -17,7 +17,7 @@ While studying V8's architecture, I mapped out the entire compilation pipeline a
 V8 creates internal structures to track object shapes. When you add or delete properties dynamically, V8 has to create new hidden classes and transition between them. This isn't free - it costs performance, especially on hot paths. On those paths it is important to keep objects shapes consistent.
 
 **The Compilation Pipeline**
-It starts with Ignition, which walks the AST and converts it to bytecode. As code executes, V8 collects data about types and usage patterns. Then the optimization kicks in:
+It starts with Ignition, which walks the AST and converts it to [[bytecode]]. As code executes, V8 collects data about types and usage patterns. Then the optimization kicks in:
 
 - **Sparkplug** - compiles to machine code without optimizations, fast compilation for warm code
 - **Maglev** - uses SSA for better optimization with the motto "good enough code, fast enough"
