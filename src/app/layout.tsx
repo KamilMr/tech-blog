@@ -35,6 +35,7 @@ const Header = () => {
             {[
               { href: '/', label: 'Home' },
               { href: '/posts', label: 'Blog' },
+              { href: '/who-i-am', label: 'Who I am?' },
             ].map(({ href, label }) => (
               <LinkComponent key={label} href={href}>
                 {label}
