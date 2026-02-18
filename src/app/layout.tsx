@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import { Inter, Lora } from 'next/font/google';
 import ThemeToggle from '@/components/ThemeToggle';
+import SearchBar from '@/components/SearchBar';
 
 import './globals.css';
 
@@ -42,7 +43,10 @@ const Header = () => {
               </LinkComponent>
             ))}
           </nav>
-          <ThemeToggle />
+          <div className="flex items-center gap-1">
+            <SearchBar />
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </header>

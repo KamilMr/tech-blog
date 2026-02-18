@@ -6,3 +6,11 @@ export interface PostMetadata {
   language: string;
   tags?: string[];
 }
+
+export interface SearchEntry {
+  title: string;
+  subtitle: string;
+  slug: string;
+  tags: string[];
+  content: string;
+}
