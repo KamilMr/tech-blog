@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { PostMetadata } from './PostMetadata';
+import Tag from './Tag';
 
 const PostCard = (props: PostMetadata) => {
   return (
@@ -21,6 +22,11 @@ const PostCard = (props: PostMetadata) => {
       <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
         {props.subtitle}
       </p>
+      {props.tags && props.tags.length > 0 && (
+        <div className="flex flex-wrap gap-2">
+          {props.tags.map(tag => <Tag key={tag} tag={tag} />)}
+        </div>
+      )}
     </article>
   );
 };

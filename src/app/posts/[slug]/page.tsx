@@ -1,4 +1,5 @@
 import { getPostMetadata } from '@/app/utils';
+import Tag from '@/components/Tag';
 import { format } from 'date-fns';
 import fs from 'fs/promises';
 import matter from 'gray-matter';
@@ -25,6 +26,11 @@ const PostPage = async (props: any) => {
       <div className='my-12 text-center'>
         <h1 className='text-2xl text-slate-600 dark:text-slate-300'>{content.data.title}</h1>
         <p className='text-slate-400 dark:text-slate-500 mt-2'>{format(content.data.date, 'dd/MM/yyyy')}</p>
+        {Array.isArray(content.data.tags) && content.data.tags.length > 0 && (
+          <div className="flex flex-wrap justify-center gap-2 mt-3">
+            {content.data.tags.map((tag: string) => <Tag key={tag} tag={tag} />)}
+          </div>
+        )}
       </div>
       <article className="prose dark:prose-invert">
         <Markdown>{content.content}</Markdown>

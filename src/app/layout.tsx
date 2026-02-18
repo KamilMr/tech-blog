@@ -1,17 +1,17 @@
-import type { Metadata } from 'next';
+import type {Metadata} from 'next';
 import Link from 'next/link';
 
-import { Inter, Lora } from 'next/font/google';
+import {Inter, Lora} from 'next/font/google';
 import ThemeToggle from '@/components/ThemeToggle';
 import SearchBar from '@/components/SearchBar';
 
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({subsets: ['latin']});
 const lora = Lora({
   subsets: ['latin'],
   style: ['normal', 'italic'],
-  variable: '--font-lora'
+  variable: '--font-lora',
 });
 
 export const metadata: Metadata = {
@@ -19,9 +19,18 @@ export const metadata: Metadata = {
   description: 'Tech Blog',
 };
 
-const LinkComponent = ({ href, children }: { href: string, children: React.ReactNode }) => {
+const LinkComponent = ({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) => {
   return (
-    <Link href={href} className="text-black dark:text-white hover:text-slate-600 dark:hover:text-slate-300 text-sm hover:underline">
+    <Link
+      href={href}
+      className="text-black dark:text-white hover:text-slate-600 dark:hover:text-slate-300 text-sm hover:underline"
+    >
       {children}
     </Link>
   );
@@ -34,10 +43,11 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <nav className="flex items-center space-x-8">
             {[
-              { href: '/', label: 'Home' },
-              { href: '/posts', label: 'Blog' },
-              { href: '/who-i-am', label: 'Who I am?' },
-            ].map(({ href, label }) => (
+              {href: '/', label: 'Home'},
+              {href: '/posts', label: 'Blog'},
+              {href: '/tags', label: 'Tags'},
+              {href: '/who-i-am', label: 'Who I am?'},
+            ].map(({href, label}) => (
               <LinkComponent key={label} href={href}>
                 {label}
               </LinkComponent>
@@ -83,7 +93,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.className} ${lora.variable} h-full flex flex-col bg-white dark:bg-[#171717] text-black dark:text-white`}>
+      <body
+        className={`${inter.className} ${lora.variable} h-full flex flex-col bg-white dark:bg-[#171717] text-black dark:text-white`}
+      >
         <Header />
         <main className="flex-1 h-[calc(100vh-80px)] overflow-y-auto">
           <div className="mx-auto max-w-2xl px-6 py-8">

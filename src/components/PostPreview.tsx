@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import {PostMetadata} from './PostMetadata';
+import Tag from './Tag';
 
 const PostPreview = (props: PostMetadata) => {
   const tags = !Array.isArray(props.tags) ? [] : props.tags;
@@ -11,16 +12,9 @@ const PostPreview = (props: PostMetadata) => {
         <h1 className="text-violet-600 dark:text-violet-400 hover:underline mb-4">{props.title}</h1>
       </Link>
       <p className="text-slate-700 dark:text-slate-300 mb-4">{props.subtitle}</p>
-      {props.tags && props.tags.length > 0 && (
+      {tags.length > 0 && (
         <div className="flex flex-wrap gap-2">
-          {tags.map(tag => (
-            <span
-              key={tag}
-              className="px-2 py-1 text-xs bg-violet-100 dark:bg-violet-900 text-violet-700 dark:text-violet-300 rounded-full"
-            >
-              {tag}
-            </span>
-          ))}
+          {tags.map(tag => <Tag key={tag} tag={tag} />)}
         </div>
       )}
     </div>
