@@ -2,3 +2,240 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ---------------------------------------------------------------------------
+ * Obsidianite-inspired palette
+ * https://github.com/bennyxguo/Obsidian-Obsidianite
+ * ------------------------------------------------------------------------- */
+:root {
+  --bg-primary: #fbfbfb;
+  --bg-secondary: #f3f3f3;
+  --text-normal: #333333;
+  --text-faint: #b2b2b2;
+  --text-h1: #333333;
+  --text-h2-from: #b25e63;
+  --text-h2-to: #db4d52;
+  --text-h-other: #333333;
+  --text-link: #db4d52;
+  --text-link-hover: #b9383d;
+  --text-mark-bg: #d3ffa4;
+  --text-mark-fg: #1f2a14;
+  --blockquote-border: #d6555f;
+  --blockquote-bg-from: rgba(214, 85, 95, 0.06);
+  --blockquote-bg-to: rgba(214, 85, 95, 0);
+  --code-inline-bg: rgba(14, 210, 247, 0.10);
+  --code-inline-fg: #0a8aa3;
+  --hr-color: #e0e0e0;
+}
+
+.dark {
+  --bg-primary: #100e17;
+  --bg-secondary: #191621;
+  --text-normal: #bebebe;
+  --text-faint: #7aa2f7;
+  --text-h1: #0fb6d6;
+  --text-h2-from: #87c2fd;
+  --text-h2-to: #dcb9fc;
+  --text-h-other: #cbdbe5;
+  --text-link: #6bcafb;
+  --text-link-hover: #b4e2fd;
+  --text-mark-bg: #263d92;
+  --text-mark-fg: #e8efff;
+  --blockquote-border: #4aa8fb;
+  --blockquote-bg-from: rgba(32, 28, 41, 0.55);
+  --blockquote-bg-to: #100e17;
+  --code-inline-bg: rgba(14, 210, 247, 0.12);
+  --code-inline-fg: rgba(14, 210, 247, 0.95);
+  --hr-color: rgba(14, 210, 247, 0.18);
+}
+
+/* ---------------------------------------------------------------------------
+ * Markdown (prose) styling
+ * ------------------------------------------------------------------------- */
+.prose {
+  color: var(--text-normal);
+  max-width: none;
+}
+
+.prose p,
+.prose li,
+.prose td,
+.prose th {
+  color: var(--text-normal);
+}
+
+/* H1 — accent color with pink-fading underline (Obsidianite signature) */
+.prose h1 {
+  color: var(--text-h1);
+  font-weight: 700;
+  padding-bottom: 0.35em;
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to right,
+    #f4569d,
+    var(--bg-primary) 60%,
+    var(--bg-primary)
+  );
+}
+
+:root .prose h1 {
+  border-image-source: linear-gradient(
+    to right,
+    #db4d52,
+    var(--bg-primary) 60%,
+    var(--bg-primary)
+  );
+}
+
+/* H2 — signature gradient text (light blue → lavender in dark mode) */
+.prose h2 {
+  background-image: linear-gradient(
+    62deg,
+    var(--text-h2-from) 0%,
+    var(--text-h2-to) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  color: var(--text-h-other);
+  font-weight: 600;
+}
+
+/* Links */
+.prose a {
+  color: var(--text-link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+
+.prose a:hover {
+  color: var(--text-link-hover);
+  border-bottom-color: currentColor;
+}
+
+/* Inline code */
+.prose :not(pre) > code {
+  background-color: var(--code-inline-bg);
+  color: var(--code-inline-fg);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.prose :not(pre) > code::before,
+.prose :not(pre) > code::after {
+  content: '';
+}
+
+/* Code blocks — Dracula-esque, matching Obsidianite */
+.prose pre {
+  background: #282936;
+  color: #f8f8f2;
+  border-radius: 8px;
+  padding: 1rem 1.15rem;
+  border: 1px solid rgba(14, 210, 247, 0.08);
+  overflow-x: auto;
+}
+
+:root .prose pre {
+  background: #2e2c3a;
+  border-color: #e3e3e3;
+}
+
+.prose pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+/* Blockquote — left accent border + soft diagonal gradient */
+.prose blockquote {
+  border-left: 3px solid var(--blockquote-border);
+  background: linear-gradient(
+    135deg,
+    var(--blockquote-bg-from),
+    var(--blockquote-bg-to)
+  );
+  padding: 0.75rem 1rem;
+  border-radius: 0 6px 6px 0;
+  font-style: normal;
+  color: var(--text-normal);
+}
+
+.prose blockquote p::before,
+.prose blockquote p::after {
+  content: '';
+}
+
+/* Strong / em / mark */
+.prose strong {
+  color: var(--text-h-other);
+}
+
+.prose em {
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+.prose mark {
+  background-color: var(--text-mark-bg);
+  color: var(--text-mark-fg);
+  padding: 0 0.2em;
+  border-radius: 3px;
+}
+
+/* Horizontal rule */
+.prose hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--hr-color),
+    transparent
+  );
+}
+
+/* Post title (outside .prose) — same gradient feel as H2 */
+.post-title {
+  background-image: linear-gradient(
+    62deg,
+    var(--text-h2-from) 0%,
+    var(--text-h2-to) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Lists — accent-colored bullets/markers */
+.prose ul > li::marker,
+.prose ol > li::marker {
+  color: var(--text-link);
+}
+
+/* Tables */
+.prose table {
+  border-collapse: collapse;
+}
+
+.prose th {
+  color: var(--text-h-other);
+  border-bottom: 2px solid var(--blockquote-border);
+}
+
+.prose td {
+  border-bottom: 1px solid var(--hr-color);
+}

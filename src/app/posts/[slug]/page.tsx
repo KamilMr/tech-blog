@@ -24,7 +24,7 @@ const PostPage = async (props: any) => {
   return (
     <div>
       <div className='my-12 text-center'>
-        <h1 className='text-2xl text-slate-600 dark:text-slate-300'>{content.data.title}</h1>
+        <h1 className='post-title text-3xl font-bold'>{content.data.title}</h1>
         <p className='text-slate-400 dark:text-slate-500 mt-2'>{format(content.data.date, 'dd/MM/yyyy')}</p>
         {Array.isArray(content.data.tags) && content.data.tags.length > 0 && (
           <div className="flex flex-wrap justify-center gap-2 mt-3">

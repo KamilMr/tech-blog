@@ -94,7 +94,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.className} ${lora.variable} h-full flex flex-col bg-white dark:bg-[#171717] text-black dark:text-white`}
+        className={`${inter.className} ${lora.variable} h-full flex flex-col bg-[#fbfbfb] dark:bg-[#100e17] text-black dark:text-white`}
       >
         <Header />
         <main className="flex-1 h-[calc(100vh-80px)] overflow-y-auto">
