@@ -73,6 +73,18 @@ const Home = () => {
             </a>
             , a simple online booking system.
           </p>
+          <p>
+            This is my dev blogging page. To learn more about me, see{' '}
+            <a
+              href="https://www.kamilmrowka.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-terminal-accent underline-offset-4 hover:underline"
+            >
+              my main page
+            </a>
+            .
+          </p>
         </div>
       </section>
 

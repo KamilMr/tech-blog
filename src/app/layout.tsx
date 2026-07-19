@@ -48,6 +48,8 @@ const Header = () => {
 };
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="w-full border-t border-terminal-line px-8 py-10">
       <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
@@ -80,7 +82,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <p className="text-xs text-terminal-muted">© 2025 kamil mrowka</p>
+        <p className="text-xs text-terminal-muted">© {currentYear} kamil mrowka</p>
       </div>
     </footer>
   );
