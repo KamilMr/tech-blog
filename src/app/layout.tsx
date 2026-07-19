@@ -1,61 +1,45 @@
 import type {Metadata} from 'next';
 import Link from 'next/link';
-
-import {Inter, Lora} from 'next/font/google';
-import ThemeToggle from '@/components/ThemeToggle';
-import SearchBar from '@/components/SearchBar';
+import {JetBrains_Mono} from 'next/font/google';
 
 import './globals.css';
 
-const inter = Inter({subsets: ['latin']});
-const lora = Lora({
-  subsets: ['latin'],
-  style: ['normal', 'italic'],
-  variable: '--font-lora',
-});
+const jetBrainsMono = JetBrains_Mono({subsets: ['latin']});
 
 export const metadata: Metadata = {
-  title: 'Kamil Mrówka',
-  description: 'Tech Blog',
-};
-
-const LinkComponent = ({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) => {
-  return (
-    <Link
-      href={href}
-      className="text-black dark:text-white hover:text-slate-600 dark:hover:text-slate-300 text-sm hover:underline"
-    >
-      {children}
-    </Link>
-  );
+  title: 'dev.kamilmrowka',
+  description: 'Backend engineer. Product thinker. Software craftsman.',
 };
 
 const Header = () => {
   return (
-    <header className="w-full">
-      <div className="max-w-2xl mx-auto px-6 py-8">
-        <div className="flex justify-between items-center">
-          <nav className="flex items-center space-x-8">
-            {[
-              {href: '/', label: 'Home'},
-              {href: '/posts', label: 'Blog'},
-              {href: '/tags', label: 'Tags'},
-              {href: '/who-i-am', label: 'Who I am?'},
-            ].map(({href, label}) => (
-              <LinkComponent key={label} href={href}>
-                {label}
-              </LinkComponent>
-            ))}
+    <header className="w-full border-b border-terminal-line px-8 py-6">
+      <div className="flex items-center justify-between gap-6">
+        <Link href="/" className="flex items-center gap-3 text-terminal-ink">
+          <span className="text-terminal-accent animate-pulse">●</span>
+          <span className="text-sm tracking-tight">kamil@dev:~$</span>
+        </Link>
+
+        <div className="flex items-center gap-6">
+          <nav className="flex items-center gap-4 text-xs uppercase tracking-widest">
+            <Link
+              href="/"
+              className="text-terminal-muted transition-colors hover:text-terminal-accent"
+            >
+              home
+            </Link>
+            <Link
+              href="/posts"
+              className="text-terminal-muted transition-colors hover:text-terminal-accent"
+            >
+              blog
+            </Link>
           </nav>
-          <div className="flex items-center gap-1">
-            <SearchBar />
-            <ThemeToggle />
+
+          <div className="hidden gap-2 sm:flex" aria-hidden="true">
+            <div className="h-3 w-3 rounded-full bg-[#ff5f56]" />
+            <div className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
+            <div className="h-3 w-3 rounded-full bg-[#27c93f]" />
           </div>
         </div>
       </div>
@@ -65,9 +49,38 @@ const Header = () => {
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="border-t border-slate-500 dark:border-slate-700 mt-12 py-6 text-center text-slate-400 dark:text-slate-500">
-        <h1> Developed by Kamil Mrówka</h1>
+    <footer className="w-full border-t border-terminal-line px-8 py-10">
+      <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+        <a
+          href="mailto:kamil@dev"
+          target="_blank"
+          rel="noreferrer"
+          className="group flex items-center gap-3 border border-terminal-line px-4 py-2 transition-all hover:border-terminal-accent hover:bg-terminal-accent hover:text-terminal-bg"
+        >
+          <span className="text-terminal-accent group-hover:text-terminal-bg">&gt;</span>
+          <span className="text-sm">mailto: kamil@dev</span>
+        </a>
+
+        <div className="flex items-center gap-5 text-sm">
+          <a
+            href="https://github.com/KamilMr"
+            target="_blank"
+            rel="noreferrer"
+            className="text-terminal-muted transition-colors hover:text-terminal-accent"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kmwebdev"
+            target="_blank"
+            rel="noreferrer"
+            className="text-terminal-muted transition-colors hover:text-terminal-accent"
+          >
+            LinkedIn
+          </a>
+        </div>
+
+        <p className="text-xs text-terminal-muted">© 2025 kamil mrowka</p>
       </div>
     </footer>
   );
@@ -79,30 +92,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
-      <head>
-        <link rel="icon" href="/favicons/favicon.ico" sizes="any" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-                document.documentElement.classList.toggle('dark', theme === 'dark');
-              })();
-            `,
-          }}
-        />
-      </head>
+    <html lang="en" className="dark h-full">
       <body
-        className={`${inter.className} ${lora.variable} h-full flex flex-col bg-[#fbfbfb] dark:bg-[#100e17] text-black dark:text-white`}
+        className={`${jetBrainsMono.className} terminal-grid selection-green flex min-h-screen flex-col text-terminal-ink`}
       >
         <Header />
-        <main className="flex-1 h-[calc(100vh-80px)] overflow-y-auto">
-          <div className="mx-auto max-w-2xl px-6 py-8">
-            {children}
-            <Footer />
-          </div>
-        </main>
+        <main className="w-full flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );

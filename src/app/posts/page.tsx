@@ -40,8 +40,8 @@ const PostsPage = async ({ searchParams }: { searchParams: SearchParams }) => {
     : filtered.slice(startIndex, startIndex + POSTS_PER_PAGE);
 
   return (
-    <div>
-      <h1 className="text-4xl font-serif italic mb-8">Writing</h1>
+    <div className="mx-auto max-w-3xl px-8 py-16">
+      <h1 className="mb-8 text-xs uppercase tracking-widest text-terminal-accent">// writing</h1>
 
       {isFiltering && (
         <ActiveFilters tags={searchParams.tags || ''} text={searchParams.text || ''} />

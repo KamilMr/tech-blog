@@ -17,8 +17,8 @@ const TagsPage = () => {
   const tagCounts = getTagCounts();
 
   return (
-    <div>
-      <h1 className="text-4xl font-serif italic mb-8">Tags</h1>
+    <div className="mx-auto max-w-3xl px-8 py-16">
+      <h1 className="mb-8 text-xs uppercase tracking-widest text-terminal-accent">// tags</h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         {tagCounts.map(([tag, count]) => (
           <Link

@@ -22,8 +22,8 @@ const PostPage = async (props: any) => {
   const slug = props.params.slug;
   const content = await getPostContent(slug);
   return (
-    <div>
-      <div className='my-12 text-center'>
+    <div className="mx-auto max-w-3xl px-8 py-16">
+      <div className='mb-12 text-center'>
         <h1 className='post-title text-3xl font-bold'>{content.data.title}</h1>
         <p className='text-slate-400 dark:text-slate-500 mt-2'>{format(content.data.date, 'dd/MM/yyyy')}</p>
         {Array.isArray(content.data.tags) && content.data.tags.length > 0 && (
@@ -32,7 +32,7 @@ const PostPage = async (props: any) => {
           </div>
         )}
       </div>
-      <article className="prose dark:prose-invert">
+      <article className="prose dark:prose-invert max-w-none">
         <Markdown>{content.content}</Markdown>
       </article>
     </div>
