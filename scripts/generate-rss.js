@@ -28,12 +28,14 @@ const getPostMetadata = () => {
   );
 };
 
+const SITE_URL = 'https://dev.kamilmrowka.com';
+
 const generateRSS = () => {
   const feed = new RSS({
-    title: 'Kamil Mrówka - tech blog',
-    description: 'This is short tech blog description',
-    feed_url: 'https://kamilmrowka.com/rss.xml',
-    site_url: 'https://kamilmrowka.com',
+    title: 'dev.kamilmrowka',
+    description: 'I write about what I do and what I learn.',
+    feed_url: `${SITE_URL}/rss.xml`,
+    site_url: SITE_URL,
     language: 'en',
   });
 
@@ -43,7 +45,7 @@ const generateRSS = () => {
     feed.item({
       title,
       guid: slug,
-      url: `https://kamilmrowka.com/posts/${slug}`,
+      url: `${SITE_URL}/posts/${slug}`,
       description: title || subtitle,
       date,
     });
