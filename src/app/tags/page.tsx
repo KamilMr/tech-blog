@@ -24,10 +24,10 @@ const TagsPage = () => {
           <Link
             key={tag}
             href={`/posts?tags=${encodeURIComponent(tag)}`}
-            className="flex items-center justify-between px-4 py-3 rounded-md border border-slate-200 dark:border-slate-800 hover:border-violet-400 dark:hover:border-violet-600 transition-colors"
+            className="flex items-center justify-between rounded-md border border-terminal-line bg-terminal-surface px-4 py-3 transition-colors hover:border-terminal-accent hover:text-terminal-accent"
           >
             <span className="text-sm">{tag}</span>
-            <span className="text-xs text-slate-400 dark:text-slate-500">
+            <span className="text-xs text-terminal-muted">
               {count}
             </span>
           </Link>

@@ -32,7 +32,7 @@ const ActiveFilters = ({tags, text}: {tags: string; text: string}) => {
           <a
             key={tag}
             href={buildHref(remaining, text)}
-            className="flex items-center gap-1 px-2 py-1 text-xs border border-violet-400 dark:border-violet-600 text-violet-600 dark:text-violet-400 rounded-full hover:text-violet-700 dark:hover:text-violet-300 transition-colors"
+            className="flex items-center gap-1 rounded-full border border-terminal-accent px-2 py-1 text-xs text-terminal-accent transition-colors hover:bg-terminal-accent hover:text-terminal-bg"
           >
             {tag}
             <svg
@@ -65,7 +65,7 @@ const ActiveFilters = ({tags, text}: {tags: string; text: string}) => {
           window.location.href = addTagHref(inputValue);
         }}
         placeholder="Add tag..."
-        className="px-2 py-1 text-xs border border-slate-200 dark:border-slate-700 rounded-full bg-transparent text-slate-600 dark:text-slate-300 placeholder:text-slate-400 dark:placeholder:text-slate-500 outline-none focus:border-violet-400 dark:focus:border-violet-600 w-24 transition-colors"
+        className="w-24 rounded-full border border-terminal-line bg-transparent px-2 py-1 text-xs text-terminal-ink outline-none transition-colors placeholder:text-terminal-muted focus:border-terminal-accent"
       />
       <a
         href="/posts"

@@ -52,13 +52,13 @@ const Footer = () => {
     <footer className="w-full border-t border-terminal-line px-8 py-10">
       <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
         <a
-          href="mailto:kamil@dev"
+          href="mailto:hi@kamilmrowka.com"
           target="_blank"
           rel="noreferrer"
           className="group flex items-center gap-3 border border-terminal-line px-4 py-2 transition-all hover:border-terminal-accent hover:bg-terminal-accent hover:text-terminal-bg"
         >
           <span className="text-terminal-accent group-hover:text-terminal-bg">&gt;</span>
-          <span className="text-sm">mailto: kamil@dev</span>
+          <span className="text-sm">mailto: hi@kamilmrowka.com</span>
         </a>
 
         <div className="flex items-center gap-5 text-sm">
