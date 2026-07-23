@@ -1,5 +1,5 @@
 ---
-title: "Testing npm Packages Locally with npm pack"
+title: Testing npm Packages Locally with npm pack
 subtitle:
 date: 2026-07-21
 language: English
@@ -13,3 +13,6 @@ This helped me test the package by installing it in my frontend application and 
 To install it locally, I had to provide the path to the generated package file during installation:
 
 `npm install ../path-to-the-file/package.tgz`
+
+## Links
+[Geeks](https://www.geeksforgeeks.org/node-js/npm-pack-command/)
