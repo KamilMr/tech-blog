@@ -62,7 +62,7 @@ I think of it as a controlled component that exposes imperative methods. The map
 The pattern works because the map instance handles the heavy rendering while React manages the data flow and user interactions.
 
 The image: 
-![map](/images/cebfa5ccab19.webp)
+![map](/images/21fdb30b0d41.webp)
 
 # Links
 
