@@ -10,7 +10,7 @@ tags:
 
 Today I learned about inline caching, one of the key optimization techniques that makes JavaScript fast. 
 
-![inline-caching](/images/inline-caching.png)
+![inline-caching](/images/9fe3ad368b1e.webp)
 
 What is it? 
 Inline caching is an optimization technique where the V8 engine remembers property access patterns at specific locations in your code - called **call sites**.
