@@ -16,4 +16,27 @@ During this time, I plan to put aside my project and focus solely on this task t
 
 The next problem I see is my upcoming trip to Spain connected with work. I will have to work and study at the same time. Combining them might not be easy.
 
+## My weekly study plan
+
+I want to give this sprint a regular place in my week. This is my starting schedule: **24 hours of AWS study each week**.
+
+<div class="study-calendar" role="region" aria-label="Weekly AWS study calendar" tabindex="0">
+  <table>
+    <caption>Weekly AWS learning sprint · 24 hours</caption>
+    <thead>
+      <tr><th scope="col">Study block</th><th scope="col">Mon</th><th scope="col">Tue</th><th scope="col">Wed</th><th scope="col">Thu</th><th scope="col">Fri</th><th scope="col">Sat</th><th scope="col">Sun</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">8–10 a.m.</th><td><strong>2 h</strong></td><td><strong>2 h</strong></td><td><strong>2 h</strong></td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+      <tr><th scope="row">Evening</th><td>-</td><td>-</td><td><strong>2 h</strong></td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+      <tr><th scope="row">Flexible time</th><td>-</td><td>-</td><td>-</td><td><strong>4 h</strong></td><td><strong>4 h</strong></td><td><strong>4 h</strong></td><td><strong>4 h</strong></td></tr>
+    </tbody>
+    <tfoot>
+      <tr><th scope="row">Daily total</th><td>2 h</td><td>2 h</td><td>4 h</td><td>4 h</td><td>4 h</td><td>4 h</td><td>4 h</td></tr>
+    </tfoot>
+  </table>
+</div>
+
+Monday to Wednesday, I will study from 8 to 10 a.m., with another two hours on Wednesday evening. From Thursday to Sunday, I plan to study for four hours a day, with the exact times still flexible.
+
 #kubecraft
